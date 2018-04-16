@@ -7,15 +7,24 @@
   <meta name="keywords" content="portfolio,brian,han,homework">
   <meta name="author" content="Brian Han">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/first-stylesheet.css">
   <title>Brian's HTML Portfolio</title>
 </head>
   
 <body>
   <header>
-    <img src="images/portfolio.png" alt="portfolio image">
+    <nav class="navbar">
+      <img src="images/portfolio.png" alt="portfolio image">
+      <h1>Brian Han's Portfolio</h1>
     <ul>
-      <li><a href="index.html">Home</a></li>
       <li><a href="about-me.html">About Me</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    </nav>
+    
+    <aside class="sidenav">
+    <ul>
+      <li><h4>My Projects</h4></li>
       <li><a href="class01/index.html">Class01-Poetry</a></li>
       <li><a href="https://bmhan319.github.io/homework1/">HW01-Safari</a></li>
       <li><a href="coming-soon.html">Class03</a></li>
@@ -27,18 +36,23 @@
       <li><a href="coming-soon.html">Class09</a></li>
       <li><a href="coming-soon.html">Class10</a></li>
     </ul>
+    </aside>
   </header>
   
   <article>
-    <h1>Brian Han's Portfolio</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet dui suscipit, maximus nisi a, ornare leo. Aliquam erat volutpat. Fusce nec fringilla dolor. Proin ac risus non nibh faucibus rutrum sed et lorem. Morbi facilisis, leo ut placerat pretium, nisl erat dictum justo, vitae lacinia ante sapien ut felis. Mauris elit justo, finibus in tempus vel, finibus vel ipsum. Nam lorem erat, blandit et odio nec, iaculis porta leo. Pellentesque est metus, efficitur eget blandit in, pellentesque et velit. Phasellus nec euismod sem. Sed mattis mattis urna eget elementum.</p>
+    
+    <p class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet dui suscipit, maximus nisi a, ornare leo. Aliquam erat volutpat. Fusce nec fringilla dolor. Proin ac risus non nibh faucibus rutrum sed et lorem. Morbi facilisis, leo ut placerat pretium, nisl erat dictum justo, vitae lacinia ante sapien ut felis. Mauris elit justo, finibus in tempus vel, finibus vel ipsum. Nam lorem erat, blandit et odio nec, iaculis porta leo. Pellentesque est metus, efficitur eget blandit in, pellentesque et velit. Phasellus nec euismod sem. Sed mattis mattis urna eget elementum.</p>
+    
+    <p class="second">Sed pretium bibendum justo, eu pulvinar ipsum cursus interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer vitae massa tellus. Nulla facilisi. Vivamus placerat blandit lorem, id scelerisque ligula tincidunt in. Donec dictum ante erat, vel accumsan elit dapibus et. Vivamus eget tortor urna. Curabitur feugiat faucibus dui, vel vehicula lacus molestie vitae. Ut quis tincidunt leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum a ipsum ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sagittis blandit purus sed interdum.</p>
+    
+    
   </article>
-    <br>
-    <br>
-    <br>
+
   <footer>
-    <p>By: Brian Han</p>
-    <p>Email: <a href="mailto:bmhan319@hotmail.com">bmhan319@hotmail.com</a></p>
+    <ul>
+    <li class="name">By: Brian Han</li>
+      <li class="email">Email: <a href="mailto:bmhan319@hotmail.com">bmhan319@hotmail.com</a></li>
+    </ul>
   </footer>
 </body>
 </html>
