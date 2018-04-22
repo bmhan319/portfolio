@@ -56,7 +56,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #46A3A3;
+  color: #1f7a7a;
 }
 
 /* Top Layer that covers the nav bar */
@@ -106,7 +106,7 @@ footer {
   height: 3rem;
   width: 100%;
   margin: 0rem;
-  padding: 0rem;
+  padding: 2rem 0rem 0rem 0rem;
   border: 0rem;
   position: fixed;
   left: 0;
@@ -137,5 +137,5 @@ footer {
 }
 
 .email a:hover{
-  color:#46A3A3;
+  color:#1f7a7a;
 }
