@@ -1,0 +1,141 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Position the nav bar to the top right */
+nav {
+  background: white;
+  width:100%;
+  height:5rem;
+  position: fixed;
+  top:0rem;
+  bottom: 5rem;
+}
+
+ol {
+  margin: 0rem;
+  list-style: none;
+}
+
+ol li {
+  float: left;
+  display:inline-flex;
+  
+}
+
+ol li i{
+  z-index: 5;
+  margin: 0;
+  padding: 1rem 0rem 0rem 0rem ;
+}
+
+ol li h1 {
+  z-index: 5;
+  margin:0;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+ul {
+  margin: 0rem;
+  list-style: none;
+
+}
+
+ul li {
+  float: right;
+  display: inline-flex;
+  z-index: 2;
+}
+
+ul li a {
+  padding: 1.3rem 1rem;
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #46A3A3;
+}
+
+/* Top Layer that covers the nav bar */
+.nav-top {
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  right: 0;
+  z-index: 3;
+}
+
+/* checkbox that triggers nav movement */
+input {
+  /*hide the checkbox */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* hamburger menu styling */
+label{
+  position: fixed;
+  top: 1.4rem;
+  right: 1rem;
+  z-index: 4;
+}
+
+/* menu and top layer slide to the right */
+label, .nav-top {
+  transition: right .5s;
+}
+
+/* once input is clicked(checkbox is checked), hamburger menu will slide to the right */
+/* '+' sign ties the checked checkbox with the label being 350px to the right */
+input:checked + label {
+  right: 370px;
+}
+
+/* once input is clicked(checkbox is checked), top layer will move slide to the right */
+/* not sure why '~' is needed rather than '+' */
+input:checked ~ .nav-top {
+  right: 380px;
+}
+
+footer {
+  background: white;
+  height: 3rem;
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  border: 0rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.name {
+  float: left;
+  display: block;
+  color: grey;
+  margin: 0px;
+  padding: 0rem;
+  border:0px;
+  font-size: 1rem;
+}
+.email {
+  float: right;
+  display: block;
+  color: grey;
+  vertical-align: middle;
+  margin: 0px;
+  border:0px;
+  font-size: 1rem;
+}
+.email a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
+}
+
+.email a:hover{
+  color:#46A3A3;
+}
