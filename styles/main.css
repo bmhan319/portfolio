@@ -1,0 +1,42 @@
+main {
+  clear: both;
+}
+
+/* various borders turn the rectangle into a blob, 50% radius will create a circle. */
+.blob {
+  position:relative;
+  margin: 10rem 4rem 10rem auto;
+  background: #5cd6d6;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 50%;
+  height: 30%;
+  width: 80%;
+  transition: all 5s ease-in-out;
+}
+
+/* on hover, this will change the corner radius curves depending on their value */
+.blob:hover {
+  border-top-left-radius: 20%;
+  border-top-right-radius: 35%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 20%;
+}
+
+/* I had to put opacity to 0 to have the text start off invisible */
+.text {
+  color: black;
+  opacity: 0;
+  text-align: left;
+  transition: all 5s ease-in-out;
+  font-size: 2rem;
+  padding: 6rem 2rem;
+}
+
+/* changed the opacity to 1 to have the text show up */
+.blob:hover .text{
+  padding: 6rem 2rem;
+  opacity: 1;
+  font-weight: 300;
+}
