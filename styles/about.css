@@ -1,0 +1,34 @@
+main{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  background: #5cd6d6;
+  width:40%;
+  float:right;
+  margin: 0rem 0rem 10rem 0rem;
+  padding:0rem 3%;
+  position:relative;
+  z-index: -8;
+  
+}
+
+article p {
+  line-height: 1.7rem;
+  font-weight: 300;
+  font-size: 1.08rem;
+}
+
+.invisible{
+  opacity:0;
+}
+
+aside img{
+  width:50%;
+  float: left;
+  position:relative;
+  margin:0rem;
+  z-index: -5;
+}
