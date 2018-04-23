@@ -1,0 +1,41 @@
+main {
+  width:60%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.section1 {
+  float:left;
+  width: 47%;
+  margin:0;
+  padding:0 0 2rem 0;  
+}
+
+.section2 {
+  float:right;
+  width: 47%;
+  margin:0;
+  padding:0 0 2rem 0rem;  
+}
+
+section img {
+  width:100%;
+  position:relative;
+  z-index: -9;
+}
+
+section p {
+  text-align: center;
+  padding: 0rem 0rem 3rem 0rem;
+  z-index: -9;
+}
+
+section p a{
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+section p a:hover{
+  color: #1f7a7a;
+}
