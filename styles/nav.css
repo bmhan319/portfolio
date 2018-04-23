@@ -15,11 +15,14 @@ nav {
 ol {
   margin: 0rem;
   list-style: none;
+    top:5rem;
+  
 }
 
 ol li {
   float: left;
   display:inline-flex;
+
   
 }
 
@@ -49,9 +52,9 @@ ul li {
 }
 
 ul li a {
-  padding: 1.3rem 1rem;
+  padding: 1.6rem .5rem 0 0;
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -79,12 +82,12 @@ input {
 /* hamburger menu styling */
 label{
   position: fixed;
-  top: 1.4rem;
+  top: 1.7rem;
   right: 1rem;
   z-index: 4;
 }
 
-/* menu and top layer slide to the right */
+/* animation of the menu and top layer slide to the right */
 label, .nav-top {
   transition: right .5s;
 }
@@ -92,7 +95,7 @@ label, .nav-top {
 /* once input is clicked(checkbox is checked), hamburger menu will slide to the right */
 /* '+' sign ties the checked checkbox with the label being 350px to the right */
 input:checked + label {
-  right: 370px;
+  right: 250px;
 }
 
 /* once input is clicked(checkbox is checked), top layer will move slide to the right */
