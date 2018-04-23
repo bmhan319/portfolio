@@ -106,10 +106,10 @@ input:checked ~ .nav-top {
 
 footer {
   background: white;
-  height: 3rem;
+  height: 2rem;
   width: 100%;
   margin: 0rem;
-  padding: 2rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
   border: 0rem;
   position: fixed;
   left: 0;
