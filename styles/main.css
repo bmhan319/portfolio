@@ -2,48 +2,63 @@ main {
   position:relative;
   margin-left:auto;
   margin-right: auto;
-  padding:5% 0rem 5% 50%;
-  z-index: -9;
+  padding:5% 0% 5% 0%;
+  z-index: -1;
 }
 
 /* various borders turn the rectangle into a blob, 50% radius will create a circle. */
 .blob {
-  height:45%;
+    clear:both;
+  width:60%;
+  height: 50%;
   position:fixed;
-  margin: 5rem 4rem 0rem 0rem;
+  margin: 6rem 0% 6rem -15%;
   background: #5cd6d6;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  transition: all 5s ease-in-out;
-  
+  transition: all 3s ease-in-out;
 }
 
 /* on hover, this will change the corner radius curves depending on their value */
 .blob:hover {
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  width:170%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+aside {
+  height:60%;
+  position:fixed;
+  margin:0;
+  padding: 2% 0% 0 63%;
 }
 
 /* I had to put opacity to 0 to have the text start off invisible */
-.text {
-  position:relative;
-  margin:0;
-  padding: 6% 4% 6% 12%;
-  height:70%;
+.text1 {
+  margin: 0;
+  color: black;
+  opacity: 1;
+  text-align: left;
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.text2 {
+  margin-top:1rem;
   color: black;
   opacity: 0;
   text-align: left;
-  transition: all 5s ease-in-out;
   font-weight: 400;
-  font-size: 1.2rem;
-  
+  font-size: 1.5rem;
+  transition: all 3s ease-in-out; 
+  color: #1f7a7a;
 }
 
 /* changed the opacity to 1 to have the text show up */
-.blob:hover .text{
+.blob:hover .text2{
   opacity: 1;
 }
