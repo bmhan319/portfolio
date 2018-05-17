@@ -132,13 +132,13 @@
     
     <label for="zip">ZipCode</label>
       <br>
-    <input type="text" name="zip" id="zip" placeholder="ex: 12345">
+    <input type="text" name="zip" id="zip" placeholder="ex: 12345" pattern="[1-9]{5}">
       <br>
       <br>
     
     <label for="email">Email *</label>
       <br>
-    <input type="email" name="email" id="email" placeholder="ex: name@email.com" required>
+    <input type="email" name="email" id="email" placeholder="ex: name@email.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
       <br>
       <br>
     
@@ -152,6 +152,10 @@
     
     <label for="comments">Message</label>
     <textarea rows="3" cols="24" name="comments" id="comments" placeholder="Leave a comment here."></textarea>
+    <br>
+    <br>
+    
+    <input type="submit" name="submit" value="Submit">
   </form>
   
   <footer>
