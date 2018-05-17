@@ -5,44 +5,26 @@
 }
 
 main{
-  width:80%;
+  width:60%;
   display:inline-flex;
-  margin:4vh 10% 4vh 10%;
+  margin:10% 20% 10% 20%;
   padding:0;
 }
 
 .column1 iframe {
-  width:40vw;
-  height:40vh;
-  padding:0 0 20vh 0;
+  width:20vw;
+  height:30vh;
+  padding:0 0 0vh 0;
   position: relative;
+  z-index: -1;
 
 }
 
 .column2 {
-  width:60vw;
-  height:40vh;
+  width:40vw;
+  height:30vh;
   background-color: #5cd6d6;
   z-index: -1;
-}
-
-.list1 {
-  display:inline;
-  list-style: none;
-  color: black;
-  position: relative;
-
-}
-.icon {
-  margin:9vh .5vw 0 3vw;
-  padding:0;
-}
-
-ol li h3 {
-  margin:9vh 0vw 0vh 0vw;
-  padding:0;
-  color:black;
-  font-size:2rem;
 }
 
 .list2 {
@@ -52,6 +34,13 @@ ol li h3 {
   margin:0 0 0 0vw;
   padding:0;
 }
+.contact1 {
+  float:left;
+  margin:0.5vh 0 0vh 3vw;
+  padding:0;
+  font-size: 1.25rem;
+}
+
 .contact2 {
   float:left;
   padding:0.5vh 0 0 3vw ;
@@ -62,4 +51,17 @@ ol li h3 {
   margin:0.5vh 0 0vh 3vw;
   padding:0;
 }
-  
+
+.text {
+  margin: 260vh 0 0 0; 
+  color: black;
+}
+
+form {
+  margin:0 0 10% 0;
+  background: #5cd6d6;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding:2% 5% 2% 5%;
+}

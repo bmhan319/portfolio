@@ -73,14 +73,14 @@ ul li a:hover {
 }
 
 /* checkbox that triggers nav movement */
-input {
+.nav-trigger {
   /*hide the checkbox */
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
 
 /* hamburger menu styling */
-label{
+.nav-label{
   position: fixed;
   top: 1.7rem;
   right: 1rem;
@@ -88,20 +88,20 @@ label{
 }
 
 /* animation of the menu and top layer slide to the right */
-label, .nav-top {
+.nav-label, .nav-top {
   transition: right .5s;
 }
 
 /* once input is clicked(checkbox is checked), hamburger menu will slide to the right */
-/* '+' sign ties the checked checkbox with the label being 350px to the right */
-input:checked + label {
+/* '+' sign ties the checked checkbox with the label being 250px to the right */
+.nav-trigger:checked + .nav-label {
   right: 250px;
 }
 
 /* once input is clicked(checkbox is checked), top layer will move slide to the right */
 /* not sure why '~' is needed rather than '+' */
-input:checked ~ .nav-top {
-  right: 380px;
+.nav-trigger:checked ~ .nav-top {
+  right: 250px;
 }
 
 footer {
